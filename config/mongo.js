@@ -16,5 +16,5 @@ const dbConnect = () => {
     );
 };
 
-module.exports = dbConnect
+module.exports = {dbConnect}
 

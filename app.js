@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const dbConnectNoSql = require("./config/mongo");
+const {dbConnect} = require("./config/mongo");
 const app = express();
 
 app.use(cors());
@@ -17,8 +17,8 @@ app.use("/api/pay", require("./routes/pay.js"));
 app.use("/api/getpay", require("./routes/getPay.js"));
 app.use("/api/notpay", require("./routes/checkNotPay"));
 
-dbConnectNoSql();
-
 app.listen(port, () => {
   console.log(`http://localhost:${port}`);
 });
+
+dbConnect();
