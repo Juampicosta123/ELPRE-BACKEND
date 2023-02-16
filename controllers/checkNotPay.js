@@ -2,7 +2,7 @@ const  studentsModel  = require("../models/students");
 const { handleHttpError } = require("../utils/handleError");
 const express = require("express");
 const { IncomingWebhook } = require("@slack/webhook");
-const webHook = new IncomingWebhook(process.env.SLACK_WEBHOOK);
+const webHook = new IncomingWebhook("https://hooks.slack.com/services/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");
 const morganBody = require("morgan-body");
 const app = express();
 const checkNotPay = async (req, res) => {
