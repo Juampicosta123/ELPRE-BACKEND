@@ -4,7 +4,6 @@ const cors = require("cors")
 const dbConnectNoSql = require('./config/mongo')
 const app = express()
 
-const ENGINE_DB = process.env.ENGINE_DB;
 
 app.use(cors())
 app.use(express.json())
@@ -27,4 +26,4 @@ app.listen(port, () =>{
     console.log(`http://localhost:${port}`)
 });
 
-(ENGINE_DB === 'nosql') ? dbConnectNoSql() : dbConnectMySql();
+dbConnectNoSql()

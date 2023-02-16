@@ -1,4 +1,4 @@
-const { studentsModel } = require("../models");
+const { studentsModel } = require("../models/students");
 const { handleHttpError } = require("../utils/handleError");
 const mongoose = require("mongoose");
 
