@@ -1,4 +1,4 @@
-const { studentsModel } = require("../models/students");
+const  studentsModel  = require("../models/students");
 const { handleHttpError } = require("../utils/handleError");
 const express = require("express");
 const { IncomingWebhook } = require("@slack/webhook");
@@ -30,9 +30,9 @@ const checkNotPay = async (req, res) => {
             },
           });
         }
-        res.json("listo")
+        res.send("listo")
       } else {
-        res.json("no se puede")
+        res.send("no se puede")
       }
     
   } catch (e) {

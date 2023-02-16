@@ -1,4 +1,4 @@
-const { studentsModel } = require("../models/students");
+const  studentsModel  = require("../models/students");
 const { handleHttpError } = require("../utils/handleError");
 const mongoose = require("mongoose");
 const getPay = async (req, res) => {
