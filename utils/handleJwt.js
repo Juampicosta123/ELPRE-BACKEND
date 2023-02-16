@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken")
-const JWT_SECRET = process.env.JWT_sECRET
+const JWT_SECRET = process.env.JWT_SECRET
 const getProperties = require("../utils/handlePropertiesEngine")
 const propertiesKey = getProperties()
 
