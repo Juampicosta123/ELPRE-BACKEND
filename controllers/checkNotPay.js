@@ -4,7 +4,7 @@ const express = require("express");
 const { IncomingWebhook } = require("@slack/webhook");
 const morganBody = require("morgan-body");
 const webHook = new IncomingWebhook(
-  "https://hooks.slack.com/services/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"
+  "https://hooks.slack.com/services/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"
 );
 const app = express();
 const checkNotPay = async (req, res) => {
