@@ -16,7 +16,6 @@ router.get("/:id", authMiddleware,validatorGetItem, checkRol(["admin"]),getItem)
 router.post("/", 
     authMiddleware,
     checkRol(["admin", "user"]),
-    validatorCreateItem, 
     createItem);
 
 //EDITAR
