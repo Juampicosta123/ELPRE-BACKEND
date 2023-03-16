@@ -4,7 +4,6 @@ const StudentsScheme = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: true,
     },
     email: {
       type: String,
@@ -14,14 +13,12 @@ const StudentsScheme = new mongoose.Schema(
     },
     mobile: {
       type: String,
-      required: true,
     },
     secondary_mobile: {
       type: String,
     },
     dni: {
       type: String,
-      required: true,
     },
     pay: [
       {
