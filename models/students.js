@@ -7,15 +7,18 @@ const StudentsScheme = new mongoose.Schema(
     },
     email: {
       type: String,
+      unique: false
     },
     address: {
       type: String,
+      unique: false
     },
     mobile: {
       type: String,
     },
     secondary_mobile: {
       type: String,
+      unique: false
     },
     dni: {
       type: String,
