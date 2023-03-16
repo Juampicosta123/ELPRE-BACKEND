@@ -26,16 +26,7 @@ const getItem = async (req, res) => {
 
 const createItem = async (req, res) => {
   try {
-    const body = {
-      name: req.body.name,
-      dni: req.body.dni,
-      mobile: req.body.mobile,
-      address: req.body.address,
-      secondary_mobile: req.body.secondary_mobile,
-      email: req.body.email
-    };
-
-    const data = await studentsModel.create(body);
+    const data = await studentsModel.create(req.body);
     res.send({ data });
   } catch (e) {
     handleHttpError(res, e.message);
