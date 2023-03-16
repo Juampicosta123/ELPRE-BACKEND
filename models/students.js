@@ -11,7 +11,6 @@ const StudentsScheme = new mongoose.Schema(
     },
     address: {
       type: String,
-      required: true,
     },
     mobile: {
       type: String,
@@ -19,7 +18,6 @@ const StudentsScheme = new mongoose.Schema(
     },
     secondary_mobile: {
       type: String,
-      required: true,
     },
     dni: {
       type: String,
@@ -40,7 +38,7 @@ const StudentsScheme = new mongoose.Schema(
     ],
   },
   {
-    timestamps: true, //TODO createdAt, updatedAt
+    timestamps: true, 
     versionKey: false,
   }
 );
