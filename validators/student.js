@@ -5,17 +5,7 @@ const validatorCreateItem = [
     check("name")
     .exists()
     .notEmpty(),
-    check("email")
-    .exists()
-    .isEmail()
-    .notEmpty(),
-    check("address")
-    .exists()
-    .notEmpty(),
     check("mobile")
-    .exists()
-    .notEmpty(),
-    check("secondary_mobile")
     .exists()
     .notEmpty(),
     check("dni")
