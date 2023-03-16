@@ -26,7 +26,7 @@ const getItem = async (req, res) => {
 
 const createItem = async (req, res) => {
   try {
-    const body = matchedData(req);
+    const body = req.body;
 
     const data = await studentsModel.create(body);
     res.send({ data });
